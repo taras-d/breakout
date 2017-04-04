@@ -1,4 +1,4 @@
 /node_modules
 
 /src/bundle.js
-/src/bundle.map.js
+/src/bundle.js.map

@@ -45,7 +45,7 @@ export class Game {
             fill: ['#ccebff', 'deepskyblue']
         },
         status: {
-            fill : 'deepskyblue',
+            fill : 'gray',
             font: '16px sans-serif'
         },
         autoPlay: false
