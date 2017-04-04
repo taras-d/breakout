@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Breakout - Full screen</title>
+        <style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+            canvas {
+                display: block;
+				position: fixed;
+				top: 0;
+				left: 0;
+                cursor: none;
+            }
+        </style>
+    </head>
+    <body>
+
+        <script src="src/bundle.js"></script>
+
+        <script>
+            var game = new Breakout({
+				screen: {
+					width: window.innerWidth,
+					height: window.innerHeight
+				}
+			});
+        </script>
+
+    </body>
+</html>
