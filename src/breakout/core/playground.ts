@@ -98,7 +98,7 @@ export class Playground {
 
         this.moveBallToPaddleCenter();
 
-        this.ballXStep = Math.round( 0.013 * this.height );
+        this.ballXStep = 10;
         this.ballYStep = -this.ballXStep;
     }
 
