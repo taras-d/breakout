@@ -3,8 +3,8 @@ var webpack = require('webpack');
 module.exports = {
     entry: './src/breakout/game.ts',
     output: {
-        path: __dirname + '/src',
-        filename: 'bundle.js'
+        path: __dirname + '/dist',
+        filename: 'breakout.min.js'
     },
     devtool: 'source-map',
     resolve: {
@@ -16,8 +16,9 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.optimize.UglifyJsPlugin(),
         new webpack.DefinePlugin({
-            LOG: JSON.stringify(true)
+            LOG: false
         })
     ]
 };

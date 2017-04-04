@@ -4,7 +4,8 @@
   "description": "HTML canvas game",
   "scripts": {
     "compile": "webpack --config webpack.dev.config.js",
-    "watch": "webpack -w --config webpack.dev.config.js"
+    "watch": "webpack -w --config webpack.dev.config.js",
+    "build": "webpack -w --config webpack.prod.config.js"
   },
   "author": "taras-d",
   "license": "ISC",
