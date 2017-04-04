@@ -1,10 +1,12 @@
-import { Playground } from './playground';
-import { PaddleOptions } from './paddle';
-import { BallOptions } from './ball';
-import { BrickOptions } from './brick';
-import { StatusOptions } from './status';
-import { Key, GameStatus } from './enums'; 
-import { getKeyCode } from './utils';
+import { Playground } from './core/playground';
+import { Key, GameStatus } from './core/enums'; 
+
+import { PaddleOptions } from './components/paddle';
+import { BallOptions } from './components/ball';
+import { BrickOptions } from './components/brick';
+import { StatusOptions } from './components/status';
+
+import { getKeyCode } from './helpers/utils';
 
 export interface GameOptions {
     screen: {

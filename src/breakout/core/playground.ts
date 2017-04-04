@@ -1,10 +1,12 @@
-import { GameOptions } from './game';
-import { Brick } from './brick';
-import { Ball } from './ball';
-import { Paddle } from './paddle';
-import { Status } from './status';
+import { GameOptions } from '../game';
 import { GameStatus } from './enums';
-import { logger } from './logger';
+
+import { Brick } from '../components/brick';
+import { Ball } from '../components/ball';
+import { Paddle } from '../components/paddle';
+import { Status } from '../components/status';
+
+import { logger } from '../helpers/logger';
 
 export class Playground {
 
