@@ -6,7 +6,7 @@
             canvas {
                 display: block;
                 margin: 0 auto;
-                border: 1px solid silver;
+                border: 1px solid deepskyblue;
                 cursor: none;
             }
         </style>
@@ -16,35 +16,7 @@
         <script src="src/bundle.js"></script>
 
         <script>
-            var game = new Breakout({
-                screen: {
-                    // width: window.innerWidth,
-                    // height: window.innerHeight
-                    width: 800,
-                    height: 600
-                },
-                bg: { fill: 'white' },
-                paddle: {
-                    width: 150,
-                    height: 30,
-                    offsetBottom: 30,
-                    fill: 'deepskyblue'
-                }, 
-                ball: {
-                    radius: 10,
-                    fill: 'deepskyblue'
-                },
-                brick: {
-                    width: 100,
-                    height: 25,
-                    fill: ['#ccebff', 'deepskyblue']
-                },
-                status: {
-                    fill : 'deepskyblue',
-                    font: '16px sans-serif'
-                },
-                autoPlay: false
-            });
+            var game = new Breakout();
         </script>
 
     </body>

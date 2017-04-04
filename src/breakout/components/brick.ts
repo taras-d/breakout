@@ -8,8 +8,6 @@ export interface BrickOptions {
 
 export class Brick extends Component {
 
-    public active: boolean = true;
-
     private life: number;
 
     constructor(

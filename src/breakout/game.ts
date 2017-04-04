@@ -6,7 +6,7 @@ import { BallOptions } from './components/ball';
 import { BrickOptions } from './components/brick';
 import { StatusOptions } from './components/status';
 
-import { getKeyCode } from './helpers/utils';
+import { getKeyCode, merge } from './helpers/utils';
 
 export interface GameOptions {
     screen: {
@@ -23,6 +23,36 @@ export interface GameOptions {
 
 export class Game {
 
+    static defaultOptions: GameOptions = {
+        screen: {
+            width: 800,
+            height: 600
+        },
+        bg: { fill: 'white' },
+        paddle: {
+            width: 150,
+            height: 30,
+            offsetBottom: 30,
+            fill: 'deepskyblue'
+        }, 
+        ball: {
+            radius: 10,
+            fill: 'deepskyblue'
+        },
+        brick: {
+            width: 100,
+            height: 25,
+            fill: ['#ccebff', 'deepskyblue']
+        },
+        status: {
+            fill : 'deepskyblue',
+            font: '16px sans-serif'
+        },
+        autoPlay: false
+    };
+
+    private options: GameOptions;
+
     private playground: Playground;
     private canvas: HTMLCanvasElement;
 
@@ -31,9 +61,11 @@ export class Game {
     private keys: {[key: string]: boolean} = {};
 
     constructor(
-        private options: GameOptions,
+        options: GameOptions,
         private parent: HTMLElement = document.body
     ) {
+
+        this.options = merge({}, Game.defaultOptions, options) as GameOptions;
 
         this.bindMethods();
         this.createPlaygroud();
