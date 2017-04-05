@@ -8,5 +8,5 @@ HTML canvas game
 2. `npm run compile` - compile typescript
 3. Open `index.html` in the browser
 
-## Usefull resurces
+## Helpful resurces
 [2D breakout game using pure JavaScript](https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript)
