@@ -98,7 +98,7 @@ export class Playground {
 
         this.moveBallToPaddleCenter();
 
-        this.ballXStep = 10;
+        this.ballXStep = 9;
         this.ballYStep = -this.ballXStep;
     }
 
@@ -213,7 +213,7 @@ export class Playground {
 
         let ctx = this.ctx,
             opts = this.options,
-            text = this.gameStatus === GameStatus.Win? 'Congratulation. You win!': 'You lose';
+            text = this.gameStatus === GameStatus.Win? 'Well Done!': 'You Lose';
 
         // Cover
         ctx.fillStyle = 'white';
