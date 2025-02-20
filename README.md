@@ -1,7 +1,7 @@
 # breakout
 HTML canvas game
 
-[Play](https://taras-d.github.io/breakout)
+[Play](https://taras-d.github.io/demo/breakout)
 
 ## Installation notes
 1. `npm install` - install Node modules
